@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>MSc_Talk</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Victor Cameron" />
+    <script src="assets/header-attrs/header-attrs.js"></script>
+    <link href="assets/remark-css/default.css" rel="stylesheet" />
+    <link href="assets/remark-css/hygge.css" rel="stylesheet" />
+    <link rel="stylesheet" href="pr.css" type="text/css" />
+    <link rel="stylesheet" href="pr-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: title-slide, middle
+
+# Aire de distribution et changements climatiques
+
+&lt;hr width="65%" align="left" size="0.3" color="orange"&gt;&lt;/hr&gt;
+
+## Comment les interactions biotiques modulent-elles la réponse?
+
+&lt;br&gt;&lt;br&gt;
+### Victor Cameron
+
+### Novembre 2020
+
+???
+
+# Réponse des espèces au cc
+
+## évaluer les effets des CC et sur l'aire de distribution en tenant compte des interactions biotiques
+
+---
+
+
+
+
+# Variabilité des réponses
+
+.center[
+![:scale 50%](assets/img/freeman_title.png)
+
+![:scale 40%](assets/img/freeman.png)
+
+]
+
+???
+
+Réponse aux cc la plus souvent rapportée: déplacement des distributions vers les pôles et altitudes
+
+Le déplacement des distributions est souvent raportée comme coincidant avec des changements abiotique de l'environnement aux limites de distribution
+  - Cela a entrainé un fort intérêt pour la compréhension des méchanismes qui limitent la distribution des espèces 
+  - Des études récentes ont souligné l'importance des interactions biotiques (wisz_role_2013)
+
+## Grande variabilité dans la réponse des distribution: les facteurs abiotiques n'expliquent complètement les déplacements de distribution (freeman_expanding_2018)
+
+Pour comprendre la réponse des espèces aux cc, compréhension des effets des interactions sur les RL et leur réponse aux cc.
+
+---
+
+# Système utilisateur-habitat
+
+## Les arbres n'arrivent pas à suivre le rythme du réchauffement climatique
+
+.center[
+![:scale 50%](assets/img/talluto.png)
+]
+
+.cite[Talluto et al. [2017](https://www.nature.com/articles/s41559-017-0182) Nat. Ecol. Evol.]
+
+???
+
+## Les habitats forestiers prennent du retard sur le réchauffement climatique
+
+---
+
+# Système utilisateur-habitat
+
+## Les passereaux sont mobiles, mais limités par leur habitat
+
+.pull-left[
+&lt;br&gt;
+La théorie des métapopulations définie la limite de distribution à l'équilibre comme un équilibre des processus d'extinction et de colonisation
+
+`$$h(T^{*}) &gt; \frac{e(T^{*})}{c(T^{*})}$$`
+]
+
+.pull-right[
+&lt;br&gt;
+.center[![:scale 70%](assets/img/schema.png)]
+]
+
+???
+
+La réponse de certaines espèces pour les quelles les arbres constituent leur habitat pourrait être modifée
+
+Ce qui est interessent, c'est que l'habitat et l'espèce répondent différemment aux cc. 
+
+## Ce système permet d'évaluer l'effet des interactions sur la réponse des espèces aux cc.
+
+---
+
+class: inverse, center, middle
+
+# Quels sont les effets combinés des changements climatiques et de la disponibilité d'habitat sur l'aire de distribution?
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+## 1- Quel est l'impact de la vitesse de réponse de l'habitat sur la réponse de l'espèce?
+
+## 2- Est-ce que la réponse est spécifique à l'espèce?
+
+???
+
+# Pour comprendre la réponse des espèce aux cc
+
+Il faut comprendre les effets combinés des cc et des interactions sur l'aire de distribution
+
+J'évalue les changements d'aire de distribution en réponse au climat et à la disponibilité d'habitat par une étude de simulation utilisant un modèle de métapop
+
+J'explore 4 scénarios pour des traits fonctionnels et des structures d'habitat différents.
+
+---
+
+# Modèle probabilistique
+
+Le Modèle est un un processus markovien qui défini les dynamiques de présence-absence d'une espèce sur un paysage divisé en patchs
+
+&lt;br&gt;
+`$$P(X_{t+1}|X_{t}, A, N, B)$$`
+
+--
+
+`$$P(X=1) = (1-e) + c$$`
+--
+
+`$$P(X=0) = (1-c) + e$$`
+
+--
+
+&lt;br&gt;&lt;br&gt;
+.center[![:scale 10%](assets/img/temp.png) ![:scale 10%](assets/img/rain.png) ![:scale 10%](assets/img/forest.png) ![:scale 10%](assets/img/bird.png)]
+
+---
+
+#  Simulations
+
+.pull-left[
+Le gradient climatique correspond à Montréal - Chibougamau
+
+Le paysage comprend 120000 patchs d'habitat
+
+La réponse des habitats forestiers est réaliste
+
+Chaque pas de temps représente 5 ans
+
+La réponse du système est simulée sur 100 ans
+
+Les résultats du scénario climatique RCP4.5 sont présentés
+]
+
+.pull-right[
+
+
+
+![](index_files/figure-html/habitat gif-.gif)&lt;!-- --&gt;
+
+]
+
+---
+
+# Changement de distribution
+
+.pull-left[
+Mesures de changement de distribution
+
+1- Déplacement
+  * Décalage
+  * Taux de migration*
+
+  
+2- Changements à la distribution
+  * `\(\Delta\)` Prévalence
+  * Changement total*
+]
+
+.pull-right[
+![](index_files/figure-html/species gif-.gif)&lt;!-- --&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Quels sont les effets combinés des changements climatiques et de la disponibilité d'habitat sur l'aire de distribution?
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+## 1- Quel est l'impact de la vitesse de réponse de l'habitat sur la réponse de l'espèce?
+
+---
+# Réponse de l'habitat
+
+## Quel est l'impact de la vitesse de réponse de l'habitat sur la réponse de l'espèce?
+
+.pull-left[
+.right[
+&lt;br&gt;
+Slow
+
+&lt;br&gt;&lt;br&gt;
+Real
+
+&lt;br&gt;&lt;br&gt;
+Fast
+]
+]
+
+.pull-right[
+![:scale 70%](assets/img/habSlow.png)
+
+![:scale 70%](assets/img/habReal.png)
+
+![:scale 70%](assets/img/habFast.png)
+]
+
+---
+
+# Résultats préléminaires
+
+## Quel est l'impact de la vitesse de réponse de l'habitat sur la réponse de l'espèce?
+
+.center[![:scale 80%](assets/img/habResponse_distr.png)]
+
+---
+
+# Résultats préléminaires
+
+## Quel est l'impact de la vitesse de réponse de l'habitat sur la réponse de l'espèce?
+
+.center[![:scale 10%](assets/img/habResponse_num.png)]
+
+---
+class: inverse, center, middle
+
+# Quels sont les effets combinés des changements climatiques et de la disponibilité d'habitat sur l'aire de distribution?
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+## 2- Est-ce que la réponse est spécifique à l'espèce?
+
+---
+
+# Distance de dispersion
+
+## Est-ce que la réponse est spécifique à l'espèce?
+
+.center[
+![](index_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+]
+---
+
+# Fragmentation du paysage
+
+## Est-ce que la réponse est spécifique à l'espèce?
+
+.pull-left[
+.right[
+&lt;br&gt;
+Linéaire
+
+&lt;br&gt;&lt;br&gt;
+Fragmenté
+
+&lt;br&gt;&lt;br&gt;
+Plus fragmenté
+]
+]
+
+.pull-right[
+![:scale 70%](assets/img/land0.png)
+
+![:scale 70%](assets/img/land4.png)
+
+![:scale 70%](assets/img/land8.png)
+]
+
+---
+
+# Résultats préléminaires
+
+## Est-ce que la réponse est spécifique à l'espèce?
+
+.center[![:scale 40%](assets/img/sim-results.png)]
+
+---
+
+# Résultats préléminaires
+
+## Est-ce que la réponse est spécifique à l'espèce?
+
+.center[![:scale 40%](assets/img/sim-NumResults.png)]
+
+---
+
+# Issues
+
+Edge effects
+
+T_{0} = 5
+
+Dispersal distance results?
+
+Migration rate measure
+
+Total change measure (# state change?)
+
+---
+
+# Expected contribution
+
+
+---
+
+# Projected timeline
+
+.small[
+|      | 2019 | 2020| 2021 |
+| :--- | :--: |:--: | :--: |
+| Winter  |  |  Literature review, Metapopulation toy models&lt;br&gt;Research proposal&lt;br&gt;BIOS2 data carpentry&lt;br&gt;BIOS2 software carpentry&lt;br&gt;**ECL750-Analyse avancée des données écologiques**&lt;br&gt;**BIO700-Séminaire de recherche 1**  | Model analysis &lt;br&gt; Memoire redaction &lt;br&gt; **PBI702-Séminaire de recherche 2**  |
+| Summer  |   | Preliminary model construction &lt;br&gt; Research proposal, Scicom training &lt;br&gt; **ECL707-Modélisation de la biodiversité** &lt;br&gt; **SCI741-Data driven ecological synthesis**  | Mémoire redaction &lt;br&gt; Initial submission &lt;br&gt; 2nd internship &lt;br&gt; **BIO793-Mémoire** |
+| Fall  | Literature review &lt;br&gt; QCBS symposium (poster) &lt;br&gt; 1st committee meeting  | Final model construction &lt;br&gt; model validation &amp; analysis &lt;br&gt; Woring group on ecological changes in gulf of st-Lawrence &lt;br&gt; NCC internship &lt;br&gt; QCBS workshops &lt;br&gt; 2nd committee meeting  | Final submission  |
+]
+
+
+
+
+
+
+---
+
+# Résultats attendus
+
+## Réponse de l'espèce (Exposition du système)
+dynamique transitoire
+shift of the ecosystem equilibrium between the pre- and post-climate change
+
+.pull-left[
+![:scale 70%](assets/img/phaseTransiante.png)
+]
+
+---
+
+# Limites de distributions
+
+.pull-left[
+.center[
+![:scale 20%](assets/img/temp.png)
+![:scale 20%](assets/img/rain.png)
+
+&lt;br&gt;&lt;br&gt;
+`$$r &gt; 0$$`
+]
+]
+
+
+.pull-right[
+.center[
+![:scale 100%](assets/img/godsoe1.png)
+]
+]
+
+???
+
+On peut définir la distribution d'une espèce comme r &gt; 0 et les RL où R = 0
+
+Les facteurs abiotiques peuvent définir les limites de distribution par leur effet sur r
+
+Il est possible que les interactions causent la limite de distribution malgré un climat stressant
+
+---
+
+# Limites de distributions
+
+.pull-left[
+.center[
+![:scale 20%](assets/img/temp.png) 
+![:scale 20%](assets/img/cat.png)
+![:scale 20%](assets/img/rain.png)
+]
+
+&lt;br&gt;&lt;br&gt;
+`$$r + I &gt; 0$$`
+]
+
+.pull-right[
+.center[
+![:scale 100%](assets/img/godsoe2.png)
+]
+]
+
+???
+
+Les interactions peuvent modifier la distribution d'une espèce en affectant r
+
+Les interactions ont le potentiel d'être un facteur important dans l'établissement des RL 
+
+Si les interactions peuvent affecter les limites de distribution, elles peuvent aussi affecter le déplacement des distributions en réponse aux changements climatiques
+
+
+---
+
+# Limites de distributions
+
+.center[
+![:scale 50%](assets/img/svenning_title.png)
+
+![:scale 65%](assets/img/svenning.png)
+]
+
+???
+
+- Interaction positive: distribution &gt; niche fondamentale et accroitre S
+- Interaction neg: distribution &lt; niche fondamentale et limiter S
+
+- Nous savons donc que les changements climatiques auront un effets significatif, mais incertain sur la distribution des espèces
+- Les interactions peuvent exacerber la vulnérabilité des espèces
+- Nous avons besoin de prédictions plus précises pour identifier l'effet combiné des interactions et cc sur la distribution des espèces
+- Permettra d'identifier les facteurs de vulnérabilité et les espèces qui sont plus vulnérable
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
