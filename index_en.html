@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>MSc_Talk</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Victor Cameron" />
+    <script src="assets/header-attrs/header-attrs.js"></script>
+    <link href="assets/remark-css/default.css" rel="stylesheet" />
+    <link href="assets/remark-css/hygge.css" rel="stylesheet" />
+    <link rel="stylesheet" href="pr.css" type="text/css" />
+    <link rel="stylesheet" href="pr-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: title-slide, middle
+
+# Distributions and climate change
+
+&lt;hr width="65%" align="left" size="0.3" color="orange"&gt;&lt;/hr&gt;
+
+## How will biotic interactions affect species response?
+
+&lt;br&gt;&lt;br&gt;
+### Victor Cameron
+
+### November, 2020
+
+---
+
+# The problem
+
+## We lack the tool to understand what will become of species distributions
+
+.pull-left[
+.center[![:scale 110%](assets/img/appalaches.png)]
+]
+
+.pull-right[
+.center[![:scale 30%](assets/img/grive.png)]
+
+.center[![:scale 70%](assets/img/corridor.png)]
+]
+
+
+???
+
+The idea for the project comes from the observation of Bicknell's trush restricted habitat response to climate change
+
+CC might not only shift sp RL, but also modify the species distribution
+
+---
+
+
+
+
+# Lots of variability in species responses
+
+.center[
+![:scale 50%](assets/img/freeman_title.png)
+
+![:scale 40%](assets/img/freeman.png)
+
+]
+
+???
+
+Réponse aux cc la plus souvent rapportée: déplacement des distributions vers les pôles et altitudes
+
+Le déplacement des distributions est souvent raportée comme coincidant avec des changements abiotique de l'environnement aux limites de distribution
+  - Cela a entrainé un fort intérêt pour la compréhension des méchanismes qui limitent la distribution des espèces 
+  - Des études récentes ont souligné l'importance des interactions biotiques (wisz_role_2013)
+
+## Grande variabilité dans la réponse des distribution: les facteurs abiotiques n'expliquent complètement les déplacements de distribution (freeman_expanding_2018)
+
+Pour comprendre la réponse des espèces aux cc, compréhension des effets des interactions sur les RL et leur réponse aux cc.
+
+---
+
+# Bottom-up system
+
+## Trees are lagging behind climate change
+
+.center[
+![:scale 60%](assets/img/talluto.png)
+]
+
+.cite[Talluto et al. [2017](https://www.nature.com/articles/s41559-017-0182) Nat. Ecol. Evol.]
+
+???
+
+User-habitat system = bottom-up system
+---
+
+# Bottom-up system
+
+## Passerine birds are mobile, but limited by their habitat
+
+.pull-left[
+&lt;br&gt;
+Metapopulation theory defines the equilibrium __range limits__ as an equilibrium of the _extinction_ and _colonization_ processes
+
+&lt;br&gt;
+`$$h(T^{*}) &gt; \frac{e(T^{*})}{c(T^{*})}$$`
+]
+
+.pull-right[
+&lt;br&gt;
+.center[![:scale 75%](assets/img/schema.png)]
+]
+
+???
+
+La réponse de certaines espèces pour les quelles les arbres constituent leur habitat pourrait être modifée
+
+Ce qui est interessent, c'est que l'habitat et l'espèce répondent différemment aux cc. 
+
+## Ce système permet d'évaluer l'effet des interactions sur la réponse des espèces aux cc.
+
+---
+
+class: inverse, center, middle
+
+# What are the combined effects of climate change and habitat availability on distributions?
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+## 1- What is the impact of habitat responssiveness on species response? 
+
+## 2- Is the response species specific?
+
+???
+
+# Pour comprendre la réponse des espèce aux cc
+
+Il faut comprendre les effets combinés des cc et des interactions sur l'aire de distribution
+
+J'évalue les changements d'aire de distribution en réponse au climat et à la disponibilité d'habitat par une étude de simulation utilisant un modèle de métapop
+
+J'explore 4 scénarios pour des traits fonctionnels et des structures d'habitat différents.
+
+---
+
+# Probabilistic model
+
+The model is a markovian process that defines a species' presence-absence dynamics on a landscape divided into patches
+
+&lt;br&gt;
+`$$P(X_{t+1}|X_{t}, A, N, B)$$`
+
+--
+
+&lt;br&gt;&lt;br&gt;
+.center[![:scale 10%](assets/img/temp.png) ![:scale 10%](assets/img/rain.png) ![:scale 10%](assets/img/forest.png) ![:scale 10%](assets/img/bird.png)]
+
+???
+
+Building the model has involved so much more than sitting down and writing lines of code
+
+* software carpentry
+* Version control
+* C++ coding
+* Algorithm optimizing
+
+---
+
+#  Simulations
+
+.pull-left[
+The climatic gradient corresponds to Montréal - Chibougamau
+
+The landscape in composed of 120,000 habitat patches
+
+Habitat response to climate change is realistic
+
+Each time steps represents 5 years
+
+The system's response is simulated over 100 years of climate warming
+
+Results shown are those for the RCP4.5 climate scenario
+]
+
+.pull-right[
+
+
+
+![](index_en_files/figure-html/habitat gif-.gif)&lt;!-- --&gt;
+
+]
+
+---
+
+# Distribution changes
+
+.pull-left[
+### Measures of distribution change
+
+1- Range shift
+  * Mismatch
+  * Migration rate
+
+  
+2- Distribution modification
+  * `\(\Delta\)` occupancy
+  * Total state change*
+]
+
+.pull-right[
+![](index_en_files/figure-html/species gif-.gif)&lt;!-- --&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# What are the combined effects of climate change and habitat availability on distributions?
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+## 1- What is the impact of habitat responsiveness on species response? 
+
+---
+# Habitat responsiveness
+
+## What is the impact of habitat responsiveness on species response? 
+
+.pull-left[
+.right[
+&lt;br&gt;
+Slow
+
+&lt;br&gt;&lt;br&gt;
+Real
+
+&lt;br&gt;&lt;br&gt;
+Fast
+]
+]
+
+.pull-right[
+![:scale 70%](assets/img/habSlow.png)
+
+![:scale 70%](assets/img/habReal.png)
+
+![:scale 70%](assets/img/habFast.png)
+]
+
+---
+
+# Habitat responsiveness
+
+## What is the impact of habitat responssiveness on species response?
+
+.pull-left[
+.center[![:scale 80%](assets/img/HabResponse_B_1.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Slow habitat responsiveness
+
+Large mismatch
+
+No changes to the distribution
+]
+
+---
+
+# Habitat responsiveness
+
+## What is the impact of habitat responsiveness on species response?
+
+.pull-left[
+.center[![:scale 80%](assets/img/HabResponse_B_2.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Slow habitat responsiveness
+
+Large mismatch
+
+No changes to the distribution
+
+### Realistic habitat responsiveness
+
+Little mismatch
+
+Steep range limit
+]
+
+---
+
+# Habitat responsiveness
+
+## What is the impact of habitat responssiveness on species response?
+
+.pull-left[
+.center[![:scale 80%](assets/img/Habresponse_B_3.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Slow habitat responsiveness
+
+Large mismatch
+
+No changes to the distribution
+
+### Realistic habitat responsiveness
+
+Little mismatch
+
+Steep range limit
+
+### Fast habitat responsiveness
+
+Close to equilibrium distribution?
+]
+
+---
+
+# Habitat responsiveness
+
+## What is the impact of habitat responssiveness on species response?
+
+.pull-left[
+.center[![:scale 80%](assets/img/Habresponse_B_3.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+&lt;br&gt;
+Little impact on species distributions
+
+Affects mismtach (extent of the range shift)
+
+Affects mainly the steepness of the range limit
+]
+
+---
+class: inverse, center, middle
+
+# What are the combined effects of climate change and habitat availability on distributions?
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+## 2- Is the response species specific?
+
+---
+
+# Dispersal distance
+
+## Is the response species specific?
+
+.center[
+![](index_en_files/figure-html/dispersalDist_fig-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# Dispersal distance
+
+## Is the response species specific?
+
+.pull-left[
+.center[![:scale 80%](assets/img/dispersal_B_1.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Limited dispersal
+
+Little mismatch
+
+Steep range limit
+]
+
+---
+
+# Dispersal distance
+
+## Is the response species specific?
+
+.pull-left[
+.center[![:scale 80%](assets/img/dispersal_B_2.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Limited dispersal
+
+Little mismatch
+
+Steep range limit
+
+### Medium dispersal
+
+Very similar effects
+]
+
+---
+
+# Dispersal distance
+
+## Is the response species specific?
+
+.pull-left[
+.center[![:scale 80%](assets/img/dispersal_B_3.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Limited dispersal
+
+Little mismatch
+
+Steep range limit
+
+### Medium dispersal
+
+Very similar effects
+
+### High dispersal 
+
+Very similar effects
+]
+
+---
+
+# Landscape fragmentation
+
+## Is the response species specific?
+
+.pull-left[
+.right[
+&lt;br&gt;
+Linear
+
+&lt;br&gt;&lt;br&gt;
+Fragmented
+
+&lt;br&gt;&lt;br&gt;
+Highly fragmented
+]
+]
+
+.pull-right[
+![:scale 70%](assets/img/land0.png)
+
+![:scale 70%](assets/img/land4.png)
+
+![:scale 70%](assets/img/land8.png)
+]
+
+---
+
+# Landscape fragmentation
+
+## Is the response species specific?
+
+.pull-left[
+.center[![:scale 80%](assets/img/fragmentation_B_1.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Linear
+
+Little mismatch
+
+Steep range limit
+]
+
+---
+
+# Landscape fragmentation
+
+## Is the response species specific?
+
+.pull-left[
+.center[![:scale 80%](assets/img/fragmentation_B_2.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Linear
+
+Little mismatch
+
+Steep range limit
+
+### Fragmented
+
+Reduced occupancy
+]
+
+---
+
+# Landscape fragmentation
+
+## Is the response species specific?
+
+.pull-left[
+.center[![:scale 80%](assets/img/fragmentation_B_3.png)]
+
+.center[.tiny[Temperature (°C)]]
+]
+
+.pull-right[
+### Linear
+
+Little mismatch
+
+Steep range limit
+
+### Fragmented
+
+Reduced occupancy
+
+### Highly fragmented
+
+Reduced occupancy
+]
+
+---
+
+# Landscape fragmentation
+
+## Is the response species specific?
+
+In some ways, yes
+
+What about species with expanding ranges (temperate species)?
+
+???
+
+Dispersal has little effect, but it might be that the distribution distances are wrong?
+
+Fragmentation does not affect mismatch, but seems to modify species distributions
+
+---
+
+# What's coming up?
+
+.pull-left[
+## Issues
+
+Climate prevalence distribution must be the same in all landscapes
+
+Normalization of the dispersal PDFs: How to make scenarios comparable?
+
+Measure of total distribution change: Number of state transitions?
+]
+
+--
+
+.pull-right[
+## Coming up
+
+R package
+* Continuous integration
+* Reproducibility
+
+Rounds of simulation on Béluga
+
+Figures
+]
+
+---
+
+# Projected timeline
+
+.tiny[
+|      | 2019 | 2020| 2021 |
+| :--- | :--- |:--- | :--- |
+| Winter  |  |  Literature review &lt;br&gt; Metapopulation toy models&lt;br&gt;Research proposal&lt;br&gt;BIOS2 data carpentry workshop&lt;br&gt;BIOS2 software carpentry workshop&lt;br&gt;**ECL750-Analyse avancée des données écologiques**&lt;br&gt;**BIO700-Séminaire de recherche 1**  | Model analysis &lt;br&gt; Thesis writing &lt;br&gt; Building R packages workshop &lt;br&gt; **PBI702-Séminaire de recherche 2**  |
+| Summer  |   | Preliminary model construction &lt;br&gt; Research proposal &lt;br&gt; Scicom training &lt;br&gt; Learned C++ language &lt;br&gt; **SCI741-Data driven ecological synthesis**  | Thesis writing &lt;br&gt; Initial submission &lt;br&gt; 2nd internship &lt;br&gt; **BIO793-Mémoire** &lt;br&gt; **ECL707-Modélisation de la biodiversité** |
+| Fall  | Literature review &lt;br&gt; QCBS symposium (poster) &lt;br&gt; 1st committee meeting  | Final model construction &lt;br&gt; Model validation &amp; analysis &lt;br&gt; Learned to use super calculators &lt;br&gt; CIEE-BIOS2 synthesis working group &lt;br&gt; NCC internship &lt;br&gt; QCBS workshops &lt;br&gt; 2nd committee meeting  | Final submission  |
+
+]
+
+
+
+
+---
+
+# Simulation results
+
+.center[![:scale 50%](assets/img/sim-results.png)]
+
+---
+
+# Numerical results
+
+.center[![:scale 50%](assets/img/sim-NumResults.png)]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
