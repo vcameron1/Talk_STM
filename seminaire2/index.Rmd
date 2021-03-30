@@ -168,7 +168,7 @@ class: inverse, center, middle
 
 # Le problème est complexe et multidimentionnel
 
-Il n'existe présentement pas d'outil pour comprendre comment les distributions d'espèces spécialistes changeront en réponse au réchauffement climatique
+Il n'existe présentement pas d'outil construit sur une base théorique solide pour comprendre comment les distributions d'espèces spécialistes changeront en réponse au réchauffement climatique
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
 
@@ -177,6 +177,8 @@ Il n'existe présentement pas d'outil pour comprendre comment les distributions 
 
 
 ???
+
+Pour explorer ces questions, je présente un modèle et puis une série d'aproximations de ses dynamiques. Je compare les résultats des simulations avec ceux des approximations et j'utilise les approximations pour répondre aux questions.
 
 Le problème est complexe et multidimensionnel: j'ai utilisé des models de simulations pour mesurer les changements de distribution d'un consommateur
 
@@ -189,6 +191,8 @@ J'ai formulé la théorie pour explorer les différentes dimensions/aspects du p
 # Un Modèle
 
 La probabilité de présence ou d'absence est calculé par le modèle pour chaque patch du paysage
+
+Processus locaux indépendants
 
 ???
 
@@ -286,11 +290,11 @@ le paysage est composée de 120000 patchs et le réchauffement climatique est su
 Décalage de l'habitat forestier
 
 .pull-right[
-![:scale 70%](assets/img/habSlow.png)
+![:scale 70%](assets/img/habFast.png)
 
 ![:scale 70%](assets/img/habReal.png)
 
-![:scale 70%](assets/img/habFast.png)
+![:scale 70%](assets/img/habSlow.png)
 ]
 
 .pull-left[]
@@ -306,7 +310,7 @@ effet du décalage sur le changement de distribution de la grive
 ---
 # un modèle
 
-fragmentation du paysage
+Structure spatiale du paysage (fragmentation)
 
 .pull-right[.center[
 ![:scale 50%](assets/img/land0.png)
@@ -369,7 +373,9 @@ Le modèle est généralisable àaux autres types d'interactions par la modifica
 
 # Les métapopulations
 
-.pull-left[$$R > \frac{e}{c}$$]
+## Effet d'un décalage sur la vitesse de réponse
+
+.pull-left[$$h > \frac{e}{c}$$]
 
 .pull-right[<br><br>![:scale 90%](assets/img/modele2.png)]
 
@@ -389,3 +395,45 @@ C-a-d:
 4. Diminution du ratio e/c de h à RL de la grive indique que la RL de la grive se trouve où l'habitat répond plus lentement au cc
 5. augmentation du ratio e/c à RL de l'habitat indique que l'habitat devient plus réactif
 
+---
+
+# Les métapopulations
+
+## Effet d'un décalage sur la persistence 
+
+Le seuil de persistence d'un consommateur dépend des charactéristiques propres au consommateur et à sa ressource ($\delta$)
+
+$$1 > \delta_{R} + \delta_{C}$$
+
+$$R > \delta_{C}$$
+
+
+Fraction des patches favorables occupées à l'équilibre
+
+$$P_{A}^{*} = 1 - \frac{\delta_{C}}{R}$$
+
+$$P^{*} = R - \delta_{C}$$
+
+???
+
+Un décalage est la modification des taux observés (e/c) de façon à affecter la persistence du consommateur.
+
+Un décalage dans la réponse de la ressource modifie la fraction des patches occupées de façon à ce que le taux de changement du consommateur à l'échelle du paysage soit ralenti et accéléré à l'échelle des patches favorables si la disponibilité d'habitat ne change pas.
+
+---
+
+# Les métapopulations
+
+## Effet de la fragmentation et du paysage
+
+Le seuil de persistence d'un consommateur dépend des charactéristiques propres au consommateur et de l'organisation spatiale du paysage $\lambda_{M}$ (connectivité)
+
+$$P_{\lambda}^{*} = 1 - \frac{\delta_{C}}{\lambda_{M}}$$
+
+$$\lambda_{M} > \delta_{C}$$
+
+???
+
+Fragmentation 
+
+---

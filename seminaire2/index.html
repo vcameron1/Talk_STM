@@ -161,6 +161,8 @@ Il n'existe présentement pas d'outil pour comprendre comment les distributions 
 
 ???
 
+Pour explorer ces questions, je présente un modèle et puis une série d'aproximations de ses dynamiques. Je compare les résultats des simulations avec ceux des approximations et j'utilise les approximations pour répondre aux questions.
+
 Le problème est complexe et multidimensionnel: j'ai utilisé des models de simulations pour mesurer les changements de distribution d'un consommateur
 
 une approche par simulation pour explorer l'effet d'un lag, des traits de l'Espèce et des charactéristiques de l'habitat
@@ -172,6 +174,8 @@ J'ai formulé la théorie pour explorer les différentes dimensions/aspects du p
 # Un Modèle
 
 La probabilité de présence ou d'absence est calculé par le modèle pour chaque patch du paysage
+
+Processus locaux indépendants
 
 ???
 
@@ -245,7 +249,7 @@ effet du décalage sur le changement de distribution de la grive
 ---
 # un modèle
 
-fragmentation du paysage
+Structure spatiale du paysage (fragmentation)
 
 .pull-right[.center[
 ![:scale 50%](assets/img/land0.png)
@@ -288,17 +292,90 @@ Pour obtenir une meilleure compréhension et développer une intuition approfond
 
 # Les métapopulations
 
-.pull-left[$$R &gt; \frac{e}{c}$$]
+.pull-left[$$h &gt; \frac{e}{c}$$]
 
 --
 
-.pull-right[&lt;br&gt;![:scale 90%](assets/img/modele2.png)]
+.pull-right[&lt;br&gt;&lt;br&gt;![:scale 90%](assets/img/modele1.png)]
 
 ???
 
 La distribution à l'échelle régionale peut être représentée par une métapopulation
+Le modèle incorpore l'effet de la ressource sur le consommateur par la variable h: disponibilité d'habitat
 Modèle très pratique pour explorer les dynamiques aux limites de distribution puisque la limite de distribution est définie comme R&gt;e/c
 
+De plus, le modèle présenté sous cette forme s'applique à tout système bottom-up et est généralisable à toutes espèces puisque les propriétés de l'espèces sont représentées par le ratio e/c
+
+Le modèle est généralisable àaux autres types d'interactions par la modification de l'inégalité pour remplacer 'h' par l'expression de sa distribution
+
+---
+
+# Les métapopulations
+
+## Effet d'un décalage sur la vitesse de réponse
+
+.pull-left[$$h &gt; \frac{e}{c}$$]
+
+.pull-right[&lt;br&gt;&lt;br&gt;![:scale 90%](assets/img/modele2.png)]
+
+???
+
+Un retard dans la réponse de l'habitat entraine:
+1. un retard de la réponse de la limite de distribution de la grive
+2. une augmentation de la valeur du ratio e/c à la limite de distribution
+3. une augmentation de la disponibilité d'habitat à la limite de distribution
+4. indirectement, une diminution du ratio e/c de l'habitat à la limit de distribution à la RL de la grive
+5. égalment, une augmentation du ratio e/c à la limite de distribution de l'habitat
+
+C-a-d:
+1. La réponse de la grive sera moindre que ce qui peut être attendue si l'on regarde uniquement le réchauffement climatique, mais supérieur à la modification de l'habitat
+2. Un ratio e/c plus important indique que le taux d'extinction gagne en importance sur le taux de colonisation et à la limite de distribution associée avec une contraction indique une vitesse de réponse plus importante: réponse non-linéaire?!?
+3. La disponibilité de l'habitat s'accroit au RL: 
+4. Diminution du ratio e/c de h à RL de la grive indique que la RL de la grive se trouve où l'habitat répond plus lentement au cc
+5. augmentation du ratio e/c à RL de l'habitat indique que l'habitat devient plus réactif
+
+---
+
+# Les métapopulations
+
+## Effet d'un décalage sur la persistence 
+
+Le seuil de persistence d'un consommateur dépend des charactéristiques propres au consommateur et à sa ressource ($\delta$)
+
+`$$1 &gt; \delta_{R} + \delta_{C}$$`
+
+`$$R &gt; \delta_{C}$$`
+
+
+Fraction des patches favorables occupées à l'équilibre
+
+`$$P_{A}^{*} = 1 - \frac{\delta_{C}}{R}$$`
+
+`$$P^{*} = R - \delta_{C}$$`
+
+???
+
+Un décalage est la modification des taux observés (e/c) de façon à affecter la persistence du consommateur.
+
+Un décalage dans la réponse de la ressource modifie la fraction des patches occupées de façon à ce que le taux de changement du consommateur à l'échelle du paysage soit ralenti et accéléré à l'échelle des patches favorables si la disponibilité d'habitat ne change pas.
+
+---
+
+# Les métapopulations
+
+## Effet de la fragmentation et du paysage
+
+Le seuil de persistence d'un consommateur dépend des charactéristiques propres au consommateur et de la disposition spatiale du paysage `\(\lambda_{M}\)` (connectivité)
+
+`$$P_{\lambda}^{*} = 1 - \frac{\delta_{C}}{\lambda_{M}}$$`
+
+`$$\lambda_{M} &gt; \delta_{C}$$`
+
+???
+
+Fragmentation 
+
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
