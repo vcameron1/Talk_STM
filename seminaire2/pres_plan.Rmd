@@ -1,0 +1,154 @@
+# Changements de distributions à l'aire du réchauffement climatique
+
+
+## La réponse des écosystèmes aux changements climatiques est complexe
+
+> Entre les études ampiriques, de simulation et les méta-analyses, la réponse des espèces est asynchrone et plusieurs montrent un décalage
+
+
+## Source de complexité: interactions biotiques
+
+> Les décalages ont le potnetiel d'affecter la distribution d'espèces et de mener à des crédits de colonisation et dettes d'extinction
+
+> Les interactions ont le potentiel d'affecter la distribution et la réponse au réchauffement climatique
+
+
+## Source de complexité: caractéristiques du paysage
+
+> À L'échelle régionale, les changements environnementaux peuvent interagir avec les caractéristiques du paysage pour affecter la réponse via la *taille des patches* et la *connectivité*.
+
+
+## La grive de Bicknell et la forêt boréale
+
+> On s'attend à ce que les distributions shift à des latitudes ou altitudes plus élevées, mais nous savons peu sur l'effet des interactions et du paysage, notamment pour les espèces spécialistes. Mon objectif est d'étudier l'effet de la réponse de la ressource sur la vitesse de réponse et la persistence d'un consommateur affectés par le récauffement climatique.
+
+> La forêt présente un décalage avec le déplacement des condition climatiques alors que la grive, plus mobile, est déchirée par des conditions climatiques moins favorables et un habitat peu réactif. 
+
+
+## Devant la complexité et la multidimentionnalité du problème, j'utilise une approche par simulation
+
+> Il n'existe présentement pas d'outil pour comprendre comment les distributions d'espèces spécialistes changeront en réponse au réchauffement climatique.
+
+> Pour explorer ces questions, je présente un modèle et puis une série d'aproximations de ses dynamiques. Je compare les résultats des simulations avec ceux des approximations.
+
+
+## Un modèle pour simuler la distribution d'un consommateur en fonction de variables environnemntales et biotiques
+
+> Approche méchanistique où la probabilité de présence ou d'absence est calculé de façon indépendante pour chaque patche du paysage.
+
+> Dynamiques spatiales de la distribution par la colonisation de patches innocuppées et l'extinction de patches occuppées.
+
+
+## Le consommateur dépend d'une ressource dynamique
+
+> La réponse de la forêt est modélisée à l'aide d'un modèle d'état et de stransitions et présente d'importantes dettes d'extinction et crédits de colonisations.
+
+> Le paysage représente l'écotone T --> B entre Montréal et Chibougamau.
+
+> Le paysage est constitué de 120000 patches soumis à un réchauffement de 1.8°C sur 100 ans (RCP4.5).
+
+
+## Réponses asynchrones de l'habitat forestier et de la grive et effets sur le changement de distribution de la grive
+
+> 3 scénarios: sans décalage, décalage réaliste et décalage complet
+
+> Prévalence de la grive sur le paysage:
+
+> Le décalage de la ressource entraine une diminution des effets de la réduction de prévalence à l'échelle du paysage.
+
+
+## Effet de la structure spatiale du paysage sur le changement de distribution de la grive
+
+> Réalistiquement, la distribution de la grive est fragmentée et le réchauffement climatique diminuera la connectivité du paysage.
+
+> La comparaison de la prévalence sur les différents paysage ne peut pas être faite directement, puisque la fragmentation affecte la prévalence à l'équilibre.
+
+> ???
+
+
+## L'interprétation du modèle est difficile en raison de la complexité et de la multidimentionnalité du problème
+
+> Le modèle est extrèmement sensible à tout changement des paramètres.
+
+> Il est difficile de comparer les différents scénarios et d'isoler l'effet d'une seule composante.
+
+> Pour explorer les intuitions provenant du modèle plus en détail, il est pertinent d'étudier l'effet des différents facteurs sur la réponse aux changements climatiques du consommateur à l'aide d'approximations théoriques.
+
+
+## La théorie des métapopulations pour étudier les distributions et ses dynamiques
+
+> La distribution à l'échelle régionale peut être représentée par une métapopulation.
+
+> Le modèle capture l'effet de la ressource sur le consommateur via la variable h: disponibilité d'habitat.
+
+> Modèle très pratique pour étudier les dynamiques aux limites de distribution.
+
+> De plus, le modèle présenté sous cette forme s'applique à tout système bottom-up et 
+
+> est généralisable à toutes espèces puisque les propriétés de l'espèces sont capturées par le ratio e/c;
+
+> insi qu'aux autres types d'interactions par la modification de l'inégalité pour remplacer 'h' par l'expression de sa distribution.
+
+
+## Réponses asynchrones de la ressource et du consommateur et effets sur le changement de distribution
+
+> Un retard dans la réponse de l'habitat entraine:
+
+> un retard de la réponse de la limite de distribution de la grive;
+
+> une augmentation de la valeur du ratio e/c à la limite de distribution;
+
+> une augmentation de la disponibilité d'habitat à la limite de distribution;
+
+> indirectement, une diminution du ratio e/c de l'habitat à la limit de distribution à la RL de la grive;
+
+> égalment, une augmentation du ratio e/c à la limite de distribution de l'habitat.
+
+> C-a-d:
+
+> La réponse de la grive sera moindre que ce qui peut être attendue si l'on regarde uniquement le réchauffement climatique, mais supérieur à la modification de l'habitat;
+
+> Un ratio e/c plus important indique que le taux d'extinction gagne en importance sur le taux de colonisation et à la limite de distribution associée avec une contraction indique une vitesse de réponse plus importante: réponse non-linéaire?!?
+
+> La disponibilité de l'habitat s'accroit au RL;
+
+> Diminution du ratio e/c de h à RL de la grive indique que la RL de la grive se trouve où l'habitat répond plus lentement au cc;
+
+> augmentation du ratio e/c à RL de l'habitat indique que l'habitat devient plus réactif;
+
+
+## Réponses asynchrones de la ressource et du consommateur et effets sur la persistence
+
+> Le seuil de persistence d'un consommateur dépend des charactéristiques propres au consommateur et à sa ressource ($\delta$):  
+
+> $$1 > \delta_{R} + \delta_{C}$$ 
+
+> $$R > \delta_{C}$$
+
+> Un décalage est l'absence de modification des taux observés (e/c) de façon à affecter la persistence du consommateur.
+
+> Le décalage de la ressource accroit la presistence du consommateur.
+
+> Un décalage dans la réponse de la ressource modifie la fraction des patches occupées de façon à ce que le taux de changement du consommateur soit ralenti à l'échelle du paysage et accéléré à l'échelle des patches favorables si la disponibilité d'habitat ne change pas.
+
+
+## Effet de la structure spatiale du paysage sur la persistence
+
+> Le seuil de persistence d'un consommateur dépend des charactéristiques propres au consommateur et de l'organisation spatiale du paysage $\lambda_{M}$ (connectivité)
+
+> $$P_{\lambda}^{*} = 1 - \frac{\delta_{C}}{\lambda_{M}}$$
+
+> $$\lambda_{M} > \delta_{C}$$
+
+> La fragmentation et la disposition spatiale des patches favorables ont d'importants impacts sur la persistence.
+
+
+## Conclusions
+
+> L'effet des changements climatiques sur les écosystèmes est complexe, la distribution des espèces est affectée par celle de ses interacteurs.
+
+> Les changements environnementaux affectera la distribution des espèces, la position des limites de distribution leur persistence et leur vitesse de réponse.
+
+> Les différences dans l'habilité à répondre aux changements environnementaux s'ajoute à l'effet des changements environnementaux pour ralentir la réponse des espèces les plus mobiles.
+
+> Les caractéristiques du paysage affecteront les espèces différemment, mais la fragmentation et la disposition des patches ont le potentiel d'amplifier les changements de distribution.
