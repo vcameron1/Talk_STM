@@ -51,7 +51,7 @@ class: title-slide, middle
 
 ### Avril 2021
 
-<br>
+<br><br>
 [<i class="fa fa-github fa-lg" style="color:#e7e8e2"></i> vcameron1](https://github.com/vcameron1/Talk_STM)
 
 ---
