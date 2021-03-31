@@ -102,6 +102,11 @@ a, a > code {
     display: none;
   }
 
+  /* set link color on title-slide the same color as the title */
+  .title-slide a, a > code {
+    color: #e7e8e2;
+  }
+
   .title-slide {
     background-image: url('assets/img/bg.png');
     background-color: #23373B;
