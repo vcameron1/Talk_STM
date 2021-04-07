@@ -331,6 +331,8 @@ Résultats: Démonstration que la théorie/modèle est **pertinente** et parvien
 2. l'effet du décalage de l'habitat
 3. l'effet de la disposition spatiale du paysage
 
+Grive = caricature pour inspirer l'analyse; portée du travail plus large
+
 ---
 
 # Théorie
@@ -603,7 +605,7 @@ $$\lambda_{M} > \frac{e}{c}$$
 
 ---
 
-# Modèle .small[.grey[\- exemple 1]]
+# Modèle .small[.grey[\- climat]]
 
 ## Réchauffement du climat
 
@@ -612,6 +614,11 @@ Décroissance de la fraction de parcelles de forêt boréale occupées $P^{*}$ p
 .pull-left[
 <br><br>
 $$P^{*} = 1 - \frac{e/c}{h}$$
+
+<br><br><br><br>
+<span style="color: #EB811B;">
+Les caractéristiques de l'espèce modulent le changement de distribution en réponse au réchauffement du climat
+</span>
 ]
 
 .pull-right[
@@ -621,8 +628,9 @@ par(mypar)
 # Base plot
 curve(1-((x)/(1-x)), 0,1,100, ylim=c(0,1), 
     lwd=2, yaxs="i", xaxs="i",
+    yaxt='n', xaxt='n',
     cex.lab=2, cex.axis=1.5,
-    ylab=expression(P^'*'), xlab='Temps (e/c)')
+    ylab=expression(P^'*'), xlab='Temps')
 curve(1-x, 0,1,100,add=T, lty=2, lwd=2)
 text(0.3, 0.9, 'h=1', cex=1.5)
 legend('topright', legend=c('Températures favorables', 'Grive de Bicknell'), lty=c(2,1), bty='n')
@@ -642,7 +650,7 @@ Augmentation des températures = perte prévalence de la grive précipitée
 
 ---
 
-# Modèle .small[.grey[\- exemple 2]]
+# Modèle .small[.grey[\- décalage]]
 
 ## Décalage dans la réponse de l'habitat
 
@@ -685,7 +693,7 @@ Sur montagne:
 
 ---
 
-# Modèle .small[.grey[\- exemple 2]]
+# Modèle .small[.grey[\- décalage]]
 
 ## Décalage dans la réponse de l'habitat
 
@@ -729,7 +737,7 @@ Limite de distribution
 
 ---
 
-# Modèle .small[.grey[\- exemple 2]]
+# Modèle .small[.grey[\- décalage]]
 
 ## Décalage dans la réponse de l'habitat
 
@@ -765,6 +773,9 @@ polygon(x=c(0,0.445,0.445,0), y=c(0,0, 0.355,0.355), col=mycol1, border=F)
 
 # déplacement de e/c 
 curve(0.8*x+0.2, 0,0.9,100,add=T, lwd=2, col='darkorange', lty=2)
+
+# Déplacement des conditions climatiques
+arrows(0.445,0.355,0.2,0.355, lwd=4)
 ```
 ]
 
@@ -777,7 +788,7 @@ Réchauffement = déplacement conditions favorables
 
 ---
 
-# Modèle .small[.grey[\- exemple 2]]
+# Modèle .small[.grey[\- décalage]]
 
 ## Décalage dans la réponse de l'habitat
 
@@ -789,6 +800,11 @@ $$P^{*} = 1 - \frac{e/c}{h}$$
 
 <br>
 $$h > \frac{e}{c}$$
+
+<br>
+<span style="color: #EB811B;">
+La synchronicité des réponses est fondamentale aux changements de distribution
+</span>
 ]
 
 .pull-right[
@@ -816,6 +832,12 @@ curve(0.8*x+0.2, 0,0.9,100,add=T, lwd=2, col='darkorange', lty=2)
 
 # Nouvelle distribution
 polygon(x=c(0,0.33,0.33,0), y=c(0,0, 0.47,0.47), col=mycol1, border=F)
+
+# Déplacement des conditions climatiques
+arrows(0.445,0.355,0.2,0.355, lwd=4)
+
+# Déplacement de la limite de distribution
+arrows(0.445,0.05,0.335,0.05, lwd=4)
 ```
 ]
 
@@ -833,15 +855,20 @@ changement de distribution:
 
 ---
 
-# Modèle .small[.grey[\- exemple 3]]
+# Modèle .small[.grey[\- fragmentation]]
 
 ## Perte de connectivité du paysage
 
-La probabilité moyenne des patches de forêt boréale d'être occupées $P_{\lambda}^{*}$ par la grive dépend de ses caractéristiques propres $\frac{e}{c}$ et de la structure spatiale (connectivité) du paysage $\lambda_{M}$
+La probabilité moyenne des parcelles de forêt boréale d'être occupées $P_{\lambda}^{*}$ par la grive dépend de ses caractéristiques propres $\frac{e}{c}$ et de la structure spatiale (connectivité) du paysage $\lambda_{M}$
 
 .pull-left[
 <br>
 $$P_{\lambda}^{*} = 1 - \frac{e/c}{\lambda_{M}}$$
+
+<br><br><br>
+<span style="color: #EB811B;">
+La structure du paysage est déterminente pour l'amplitude des impacts de la perte d'habitat sur les changements de distribution
+</span>
 ]
 
 .pull-right[
@@ -852,11 +879,15 @@ x <- seq(0,1, le=100)
 delta <- 0.3
 y <- 1-delta/x
 
-plot(x=x, y=y, 
+plot(x=1-x, y=y, 
     ylim=c(0,1),
     type='l', lwd=2, yaxs="i", xaxs="i",
+    xaxt='n', yaxt='n',
     cex.lab=2, cex.axis=1.5,
-    ylab=expression(P[lambda]^'*'), xlab=expression(lambda[M]))
+    ylab=expression(P[lambda]^'*'), xlab='Temps')
+curve(1-(0.05+x), 0,1,100,add=T, lty=2, lwd=2)
+text(0.1, 0.55, 'e/c=0.3', cex=1.5)
+legend('topright', legend=c('Connectivité', 'Grive de Bicknell'), lty=c(2,1), bty='n')
 ```
 ]
 
@@ -939,54 +970,19 @@ Mark Vellend
 
 # Capacité de la métapopulation
 
-Capacité de métapopulation: première valuer propre de la matrice de 'paysage'
+Capacité de métapopulation: première valeur propre de la matrice de 'paysage'
 
-$$Taux d'extinction_{i} = \frac{e}{A_{i}}$$
+$$Taux\;d'extinction_{i} = \frac{e}{A_{i}}$$
 
-$$Taux de colonisation_{i} = c\sum{exp(-\alpha d_{ij})} A_{j}P_{j}$$
+$$Taux\;de\;colonisation_{i} = c\sum{exp(-\alpha d_{ij})} A_{j}P_{j}$$
 
-???
+Notation matricielle pour décrire le système d'équations donnant le taux de changements de $p_{i}$: Matrice $M$ est composé des éléments $m_{ij} = exp(-\alpha d_{ij} A_{i}A_{j})$ pour $j \ne i$ et $m_{ii}=0$
 
-
----
-
-# Écosystèmes et réchauffement climatique
-
-## Modélisation de la réponse de la grive de Bicknell
-
-$H_{0}$: Correlation entre conditions climatiques et présence 
+Il existe une solution à l'équilibre pour $p^{*}_{i} > 0$ pour tous $i$ si $\lambda_{M} > \frac{e}{c}$
 
 ???
 
-La réponse de la grive au réchauffement du climat a été décrite par deux hypothèses/théories:
-
-1. L'hypothèse nulle est représentée par le SDM qui corrèle la distribution d'une espèce à la présence de conditions climatiques spécifiques
-
---
-
-$H_{1}$: Taux d'expansion en fonction de traits spécifiques
-
-???
-
-2. H_{1} est l'inclusion de traits spécifiques tels que des processus démographiques et des limites de dispersion sur la capacité à suivre le déplacement des conditions climatiques favorables
-
---
-
-$H_{Victor}$: Trois facteurs de complexité
-
-> Dispersion - climat
-
-> Biotique - abiotique
-
-> Dispersion - fragmentation - taille des parcelles 
-
-???
-
-Mon hypothèse est que la réponse de la grive est déterminée par le 
-- déplacement de ses conditions climatiques favorables, 
-- Sa capacité de dispersion et démographie
-- sa dépendance à l'habitat boréale et la réponse de l'habitat au réchauffement du climat, 
-- ainsi qu'à la disposition spatiale du paysage
+Ces suppositions (sur e et c) permettent de relier les processus les plus importants des métapop (e et c) à la structure spatiale du paysage (position et A)
 
 ---
 
