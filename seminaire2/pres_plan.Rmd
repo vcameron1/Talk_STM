@@ -1,4 +1,4 @@
-# Changements de distributions à l'aire du réchauffement climatique
+# Changements de distributions à l'ère du réchauffement climatique
 
 
 ## La réponse des écosystèmes aux changements climatiques est complexe
@@ -152,3 +152,7 @@
 > Les différences dans l'habilité à répondre aux changements environnementaux s'ajoute à l'effet des changements environnementaux pour ralentir la réponse des espèces les plus mobiles.
 
 > Les caractéristiques du paysage affecteront les espèces différemment, mais la fragmentation et la disposition des patches ont le potentiel d'amplifier les changements de distribution.
+
+Last slide: En quoi cE'st utile de faire de la théorie et l'utiliation e modèle a aidé la santé publique (Sally)
+- importance de la th et modelisation piur la covid
+- faire lien entre covid et cc. on ne peut pas faire d'expériences'
